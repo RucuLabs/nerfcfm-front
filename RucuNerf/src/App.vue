@@ -1,8 +1,10 @@
 <script setup>
-import { RouterView } from 'vue-router'
+import { RouterView } from 'vue-router';
+import  NavTab  from './components/NavTab.vue';
 </script>
 
 <template>
-  <h1>RucuNerf</h1>
-  <RouterView />
+  <NavTab>
+    <RouterView />
+  </NavTab>
 </template>
