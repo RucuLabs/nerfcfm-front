@@ -1,10 +1,17 @@
 <script setup>
 import { RouterView } from 'vue-router';
-import  NavTab  from './components/NavTab.vue';
+import MainView from './views/MainView.vue';
 </script>
 
 <template>
-  <NavTab>
+  <MainView>
     <RouterView />
-  </NavTab>
+  </MainView>
 </template>
+
+
+<style>
+#app {
+  padding: 0;
+}
+</style>
