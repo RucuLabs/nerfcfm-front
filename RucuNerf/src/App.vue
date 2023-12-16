@@ -13,5 +13,6 @@ import MainView from './views/MainView.vue';
 <style>
 #app {
   padding: 0;
+  height: 100vh;
 }
 </style>

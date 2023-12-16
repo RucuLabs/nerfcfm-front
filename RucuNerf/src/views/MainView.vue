@@ -5,7 +5,7 @@
         <el-icon><Menu /></el-icon>
       </span>
     </el-header>
-    <el-container>
+    
       <el-drawer
         v-model="isCollapse"
         class="drawer"
@@ -27,7 +27,7 @@
       <el-main>
         <slot />
       </el-main>
-    </el-container>
+    
   </el-container>
 </template>
 
@@ -47,12 +47,10 @@ import {
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 
-const router = useRouter();
 const isCollapse = ref(false);
 function collapseSidebar() {
   isCollapse.value = !isCollapse.value;
 }
-
 </script>
 
 <style>

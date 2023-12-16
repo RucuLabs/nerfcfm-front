@@ -11,5 +11,4 @@ import {
     ElTable,
     ElTableColumn,
 } from 'element-plus';
-
 </script>

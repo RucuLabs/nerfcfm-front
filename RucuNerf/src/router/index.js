@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import CreateModelView from '../views/CreateModelView.vue';
 import MyModelsView from '../views/MyModelsView.vue';
+import ObjectView from '../views/ObjectView.vue';
 
 
 const router = createRouter({
@@ -15,6 +16,11 @@ const router = createRouter({
       path: '/myModels',
       name: 'myModel',
       component: MyModelsView
+    },
+    {
+      path: '/object',
+      name: 'object',
+      component: ObjectView
     }
   ]
 })
