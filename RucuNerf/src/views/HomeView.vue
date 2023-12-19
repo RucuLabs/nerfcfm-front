@@ -38,7 +38,6 @@
         ></vue3dLoader>
       </el-carousel-item>
     </el-carousel>
-    <template #footer>
       <div class="card-footer">
         <span>{{ objName }}</span>
         <el-button 
@@ -47,7 +46,6 @@
           circle 
           @click="toggleRotate()"/>
       </div>
-    </template>
   </el-card>
   
   
@@ -82,7 +80,6 @@
     rotate();
   };
   function onChange(event) {
-    console.log(event);
     objName.value = objNames[event];
   };
   function rotate() {
@@ -105,8 +102,8 @@
 
 <style>
 .card-footer {
-display: flex;
-justify-content: space-between;
-align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 </style>
