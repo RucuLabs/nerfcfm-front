@@ -12,6 +12,11 @@
       <el-form-item label="Description">
         <el-input type="textarea"/>    
       </el-form-item>
+      <el-form-item>
+        <el-button>
+          Upload
+        </el-button>
+      </el-form-item>
     </el-form>
   </template>
   
@@ -21,6 +26,7 @@
     ElForm,
     ElFormItem,
     ElInput,
+    ElButton,
   } from 'element-plus'
   
   const dataVal = ref({});

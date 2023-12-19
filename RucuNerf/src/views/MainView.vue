@@ -46,7 +46,7 @@
           <RouterLink to="/myProcessedData">
             <el-menu-item index="2-1">
               <el-icon><List /></el-icon>
-              My Processed Data
+              Ready Data
             </el-menu-item>
           </RouterLink>
           <RouterLink to="/processData">
