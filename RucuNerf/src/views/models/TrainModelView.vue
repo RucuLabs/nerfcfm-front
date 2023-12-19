@@ -3,8 +3,8 @@
     :model="modelVal"
     label-width="auto"
     label-position="left">
-    <el-form-item label="Upload">
-      <el-input type="file"/>    
+    <el-form-item label="Available data">
+      <el-select></el-select>   
     </el-form-item>
     Settings
     <el-form-item label="Quality">
@@ -17,17 +17,16 @@
       <el-button>Submit</el-button>
     </el-form-item>
   </el-form>
-</template>
-
+  </template>
+  
 <script setup>
-import { ref } from 'vue';
-import {
-  ElForm,
-  ElFormItem,
-  ElInput,
-  ElSelect,
-  ElButton
-} from 'element-plus'
-
-const modelVal = ref({});
+  import { ref } from 'vue';
+  import {
+    ElForm,
+    ElFormItem,
+    ElSelect,
+    ElButton
+  } from 'element-plus'
+  
+  const modelVal = ref({});
 </script>
