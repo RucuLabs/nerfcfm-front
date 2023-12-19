@@ -20,6 +20,11 @@
       direction="ltr"
       size="50%">
       <el-menu>
+        <RouterLink to="/">
+          <el-menu-item index="0">
+            <el-icon><Home /></el-icon>
+          </el-menu-item>
+        </RouterLink>
         <el-sub-menu index="1">
           <template #title>
             <el-icon><Media /></el-icon>
@@ -119,6 +124,7 @@ import { RouterLink } from 'vue-router';
 import Cloud from '../components/icons/cloud.vue';
 import Menu from '../components/icons/menu.vue';
 import Ar from '../components/icons/ar.vue';
+import Home from '../components/icons/home.vue';
 import TresDe from '../components/icons/3d.vue';
 import Media from '../components/icons/media.vue';
 import Movie from '../components/icons/movie.vue';

@@ -8,6 +8,7 @@ import TrainModelView from '../views/models/TrainModelView.vue'
 import MyObjectsView from '../views/objects/MyObjectsView.vue'
 import ExportObjectView from '../views/objects/ExportObjectView.vue'
 import ObjectViewer from '../views/objects/ObjectViewer.vue'
+import HomeView from '../views/HomeView.vue'
 
 
 
@@ -17,7 +18,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'Home',
-      component: MyModelsView
+      component: HomeView
     },
     {
       path: '/uploadData',
