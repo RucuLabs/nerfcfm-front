@@ -14,5 +14,8 @@ import MainView from './views/MainView.vue';
 #app {
   padding: 0;
   height: 100vh;
+  width: 100vw;
+  max-width: inherit;
+  margin: 0;
 }
 </style>
