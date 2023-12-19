@@ -25,7 +25,6 @@
           :rotation="rotation"
           @load="onLoad()"
         ></vue3dLoader>
-        Pato
       </el-carousel-item>
       <el-carousel-item>
         <vue3dLoader
@@ -37,7 +36,6 @@
           :rotation="rotation"
           @load="onLoad()"
         ></vue3dLoader>
-        Roco
       </el-carousel-item>
     </el-carousel>
     <template #footer>
@@ -74,6 +72,7 @@
   const rotationSpeed = ref(0);
   const isRotating = ref(false);
   const audio = new Audio('./src/assets/music/freebird.mp3');
+  audio.volume = 0.1;
   rotation.value = {
     x: -Math.PI / 2,
     y: 0,
