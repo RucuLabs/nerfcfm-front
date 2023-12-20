@@ -1,9 +1,9 @@
 import axios from 'axios';
 
 export default {
-    getNerfObjectsByUser(userId) {
+    getNerfObjectsByUser() {
         return axios.get(
-            `nerf-objects/?user=${userId}`
+            `nerf-objects/user/`
         );
     },
     getNerfObjectInfo(objId) {

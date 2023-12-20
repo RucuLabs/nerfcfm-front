@@ -59,7 +59,6 @@
     ElCarousel,
     ElCarouselItem,
     ElButton,
-    ElIcon,
   } from 'element-plus';
   import {
     CaretRight

@@ -1,8 +1,9 @@
 <template>
     <el-card>
+        
       <vue3dLoader
-        filePath="http://127.0.0.1:8000/api/nerf-objects/1/obj/"
-        mtlPath="./src/assets/obj/capy/material_0.mtl"
+        filePath="https://raw.githubusercontent.com/ccarrions/public_assets/main/mesh.obj"
+        mtlPath="https://raw.githubusercontent.com/ccarrions/public_assets/main/material_0.mtl"
         height="500"
         :cameraPosition="{ x: 0, y: 0, z: -3 }"
         :backgroundColor="0xffffff"
@@ -23,6 +24,8 @@
   } from 'element-plus';
   import ObjectApi from "../../api/ObjectApi";
   const rotation = ref();
+  const blobUrl = ref('');
+  let objBlob;
   let loadingPopUp;
   rotation.value = {
     x: -Math.PI / 2,
@@ -44,8 +47,11 @@
         text: 'Loading',
         background: 'rgba(0, 0, 0, 0.7)',
       });
-      const infoResponse = await ObjectApi.getNerfObjectObj(1);
-      console.log(infoResponse);
+      objBlob = await ObjectApi.getNerfObjectTextureBlob(1);
+      console.log(objBlob.data);
+      blobUrl.value = URL.createObjectURL(objBlob.data);
+      console.log(blobUrl.value)
+      
     } catch (error) {
       console.log(error)
     loadingPopUp.close();
